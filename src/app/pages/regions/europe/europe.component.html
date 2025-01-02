@@ -1,0 +1,12 @@
+<div class="container mx-auto px-4 py-8 mt-8">
+  <h2
+    class="text-3xl font-semibold text-center text-blue-800 dark:text-gray-200 mb-6"
+  >
+    Les pays d'Europe {{ countries.length }} Pays
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    @for (country of countries; track country.name) {
+    <app-card-countrie [country]="country" />
+    }
+  </div>
+</div>

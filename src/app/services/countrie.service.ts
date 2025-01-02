@@ -13,4 +13,8 @@ export class CountrieService {
   getAllCountries(): Observable<Country[]> {
     return this.http.get<Country[]>(`${this.baseApiUrl}/all`);
   }
+
+  getAllCountriesByRegigon(region: string): Observable<Country[]> {
+    return this.http.get<Country[]>(`${this.baseApiUrl}/region/${region}`);
+  }
 }

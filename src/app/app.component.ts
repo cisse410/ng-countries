@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-import { CountriesPage } from './pages/countries/countries.page';
+import { RouterModule } from '@angular/router';
 import { inject } from '@vercel/analytics';
 
 inject();
@@ -9,7 +7,7 @@ inject();
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, CountriesPage],
+  imports: [RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
