@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { CountriesPage } from './pages/countries/countries.page';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 @Component({
   selector: 'app-root',
