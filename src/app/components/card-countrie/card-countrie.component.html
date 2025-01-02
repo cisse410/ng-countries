@@ -1,0 +1,24 @@
+<div
+  class="bg-white dark:bg-gray-800 shadow-lg rounded-lg hover:shadow-lg hover:scale-y-105 transition overflow-hidden"
+>
+  <img
+    src="https://tailwindcss.com/_next/static/media/headlessui@75.c1d50bc1.jpg"
+    alt="Headless UI"
+    class="w-full h-64 object-cover"
+  />
+  <div class="p-4 md:p-6">
+    <h3 class="text-xl font-semibold text-indigo-500 dark:text-indigo-300 mb-2">
+      {{ country().name.common }}
+    </h3>
+    <p class="text-gray-700 dark:text-gray-300 mb-4 two-lines">
+      Population: {{ country().population | number }}<br />
+      Capitale: {{ country().capital }}<br />
+      Région: {{ country().region }}
+    </p>
+    <a
+      href="#"
+      class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full"
+      >Découvrir</a
+    >
+  </div>
+</div>
