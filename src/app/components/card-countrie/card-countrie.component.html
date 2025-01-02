@@ -1,16 +1,14 @@
-<div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+<div class="bg-white shadow-lg rounded-lg overflow-hidden">
   <img
     [src]="country().flags.svg"
     [alt]="'Drapeau de ' + country().name.common"
     class="w-full h-64 object-cover"
   />
   <div class="p-4 md:p-6">
-    <h3
-      class="text-xl font-semibold text-nowrap text-indigo-500 dark:text-indigo-300 mb-2"
-    >
+    <h3 class="text-xl font-semibold text-nowrap text-indigo-500 mb-2">
       {{ country().name.common }}
     </h3>
-    <div class="text-gray-700 dark:text-gray-300 mb-4">
+    <div class="text-gray-700 mb-4">
       <p>Population: {{ country().population | number }} habitants</p>
       <p>Capitale: {{ country().capital }}</p>
       <p>Superficie: {{ country().area | number }}</p>
